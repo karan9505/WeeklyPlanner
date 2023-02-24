@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>
+            Weekly Palnner
+        </title>
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="WeeklyPlanner">
+            <div class="Header">
+                <div class="Heading">
+                    <img src="./Leaves.png" class="leaves1" height="45px">
+                    Weekly<br>Planner
+                </div>
+                <div class="MonthWeek">
+                    <div class="Month">
+                        <label for="Month">
+                            Month :
+                        </label>
+                        <input type="text" id="Month">
+                    </div>
+                    <div class="Week">
+                        <label for="Month">
+                            Week :
+                        </label>
+                        <input type="text" id="Week">
+                    </div>
+                </div>
+            </div>
+            <div class="DaySelect">
+                <select id="Day" onclick="ClearText()">
+                    <option>
+                        Select Day
+                    </option>
+                    <option>
+                        Sunday
+                    </option>
+                    <option>
+                        Monday
+                    </option>
+                    <option>
+                        Tuesday
+                    </option>
+                    <option>
+                        Wednesday
+                    </option>
+                    <option>
+                        Thursday
+                    </option>
+                    <option>
+                        Friday
+                    </option>
+                    <option>
+                        Saturday
+                    </option>
+                    <option>
+                        Note
+                    </option>
+                </select>
+            </div>
+            <div class="NoteEntry">
+                <input type="text" id="NoteEntry" placeholder="Tell me..." onclick="ClearText()">
+                <input type="button" value="ADD" id="abutton" onclick="AddNote()">
+                <input type="button" value="CLEAR" id="rbutton" onclick="ClearNote()">
+            </div>
+            <div class="Row1">
+                <div class="Sunday">
+                    <h3 class="dayhead">Sunday</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+                <div class="Monday">
+                    <h3 class="dayhead">Monday</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+                <div class="Tuesday">
+                    <h3 class="dayhead">Tuesday</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+            </div>
+            <div class="Row2">
+                <div class="Wednesday">
+                    <h3 class="dayhead">Wednesday</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+                <div class="Thursday">
+                    <h3 class="dayhead">Thursday</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+                <div class="Friday">
+                    <h3 class="dayhead">Friday</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+            </div>
+            <div class="Row3">
+                <div class="Saturday">
+                    <h3 class="dayhead">Saturday</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+                <div class="Note">
+                    <h3 class="dayhead">Note</h3>
+                    <div class="daydata">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./pot.png" height="130px" class="pot">
+        <img src="./Leaves1.png" height="40px" class="leaves2">
+    </body>
+</html>
